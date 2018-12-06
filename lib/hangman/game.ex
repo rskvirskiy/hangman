@@ -24,7 +24,7 @@ defmodule Hangman.Game do
     accept_move(game, guess, MapSet.member?(game.used, guess))
   end
 
-  defp tally(game) do
+  def tally(game) do
     %{
       game_state: game.game_state,
       turns_left: game.turns_left,
